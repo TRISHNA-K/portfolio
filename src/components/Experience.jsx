@@ -21,6 +21,7 @@ import {
   EDUCATION,
   EXPERIENCES,
   LEADERSHIP_CLUBS,
+  CERTIFICATIONS,
   PITCH_DATA,
   EMAIL,
   RESUME_URL,
@@ -138,6 +139,33 @@ export const Experience = () => {
                 {c}
               </span>
             ))}
+          </div>
+
+          {/* Prior Academic Milestones */}
+          <div className="mt-6 pt-5 border-t border-[#141413]/10">
+            <p className="font-mono-x text-[10px] uppercase tracking-[0.18em] text-[#8f8a7c] mb-3">
+              Prior Academic Milestones:
+            </p>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {EDUCATION.priorEducation?.map((pe) => (
+                <div
+                  key={pe.level}
+                  className="flex items-center justify-between border border-[#141413]/15 bg-[#141413]/[0.02] px-4 py-2.5"
+                >
+                  <div>
+                    <p className="font-display font-semibold text-sm tracking-tight text-[#141413]">
+                      {pe.level}
+                    </p>
+                    <p className="font-mono-x text-[10px] text-[#8f8a7c]">
+                      {pe.institution} · {pe.period}
+                    </p>
+                  </div>
+                  <span className="font-display font-semibold text-base text-[#c23a22]">
+                    {pe.score}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </motion.div>
 
@@ -289,6 +317,57 @@ export const Experience = () => {
                 </motion.article>
               ))}
             </div>
+          </div>
+        </div>
+
+        {/* Achievements & Certifications */}
+        <div className="mt-16">
+          <div className="flex items-center gap-2.5 pb-2 border-b border-[#141413]/15 mb-6">
+            <span className="w-7 h-7 bg-[#141413] text-[#f5f1e8] flex items-center justify-center">
+              <Award size={14} strokeWidth={1.75} />
+            </span>
+            <div>
+              <h3 className="font-display font-semibold text-lg tracking-tight">
+                Achievements &amp; Certifications
+              </h3>
+              <p className="font-mono-x text-[10px] uppercase tracking-[0.18em] text-[#8f8a7c]">
+                Verified Industry Credentials
+              </p>
+            </div>
+          </div>
+
+          <div className="grid sm:grid-cols-3 gap-5">
+            {CERTIFICATIONS.map((cert, i) => (
+              <motion.div
+                key={cert.title}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-30px" }}
+                transition={{ delay: i * 0.08, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                className="border border-[#141413]/20 bg-[#faf8f5] p-5 sm:p-6 hover:-translate-y-1 hover:shadow-[0_12px_28px_-14px_rgba(20,20,19,0.25)] transition-all duration-300 flex flex-col justify-between"
+                data-testid={`cert-card-${i}`}
+              >
+                <div>
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="font-mono-x text-[9px] uppercase tracking-[0.15em] border border-[#141413]/30 px-2 py-0.5 bg-[#141413]/[0.03]">
+                      {cert.badge}
+                    </span>
+                    <span className="font-mono-x text-[10px] text-[#c23a22] font-semibold">
+                      {cert.year}
+                    </span>
+                  </div>
+                  <h4 className="mt-3 font-display font-semibold text-base sm:text-lg tracking-tight leading-snug">
+                    {cert.title}
+                  </h4>
+                  <p className="font-mono-x text-xs text-[#8f8a7c] tracking-[0.06em] mt-1">
+                    {cert.issuer}
+                  </p>
+                  <p className="mt-2.5 text-xs text-[#5e5b52] leading-relaxed">
+                    {cert.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
 

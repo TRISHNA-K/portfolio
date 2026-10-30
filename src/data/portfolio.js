@@ -2,9 +2,12 @@ const GH = "https://github.com/TRISHNA-K";
 const TREE = `${GH}/Product-Project-Management-portfolio/tree/3b84443a435f58b755444b3fd5c0030cecce30af`;
 
 export const EMAIL = "trishnakuruppath@gmail.com";
+export const PHONE = "+91-9074721558";
+export const PHONE_URL = "tel:+919074721558";
 export const GITHUB_URL = GH;
 export const LINKEDIN_URL = "https://www.linkedin.com/in/trishna-k-834230275";
-export const RESUME_URL = "https://drive.google.com/file/d/10BJjA4_xW_qrF7okeBSkhF9Lp8R-KtuM/view?usp=sharing";
+export const RESUME_URL = "./resume.pdf";
+export const RESUME_DRIVE_URL = "https://drive.google.com/file/d/10BJjA4_xW_qrF7okeBSkhF9Lp8R-KtuM/view?usp=sharing";
 
 export const getGmailUrl = (subject = "", body = "") => {
   const su = subject ? `&su=${encodeURIComponent(subject)}` : "";
@@ -20,16 +23,21 @@ export const getMailtoUrl = (subject = "", body = "") => {
 };
 
 export const SKILLS = [
-  "PRD authoring",
-  "User research",
-  "RICE prioritisation",
-  "A/B testing",
-  "Cohort analysis",
-  "RAG architecture",
-  "Roadmapping",
-  "Sentiment analysis",
-  "Heuristic audits",
-  "North Star metrics",
+  "PRD Development",
+  "User Research",
+  "Feature Prioritization",
+  "Roadmap Planning",
+  "Product Metrics",
+  "Project Coordination",
+  "Milestone Tracking",
+  "Risk Identification",
+  "Agile & SDLC",
+  "Generative AI & RAG",
+  "Prompt Engineering",
+  "SQL & Python",
+  "Excel & Power BI",
+  "Looker Studio",
+  "Svelte & Vite",
 ];
 
 export const STATS = [
@@ -327,34 +335,37 @@ export const LAB_STEPS = [
 export const COMPETENCIES = [
   {
     index: "01",
-    title: "Product Strategy & PRDs",
+    title: "Product Management",
     items: [
-      "PRD authoring",
-      "Feature scoping",
-      "Roadmapping",
-      "RICE prioritisation",
+      "User research & discovery",
       "Competitive teardowns",
+      "PRD authoring & scoping",
+      "Feature prioritization",
+      "Roadmap planning",
+      "Product metrics & KPIs",
     ],
   },
   {
     index: "02",
-    title: "User Research & UX",
+    title: "Project Management",
     items: [
-      "User interviewing",
-      "Heuristic audits",
-      "Figma wireframing",
-      "Usability testing",
-      "Journey mapping",
+      "Project coordination",
+      "Milestone tracking",
+      "Risk identification",
+      "Progress reporting",
+      "Stakeholder communication",
+      "Agile, Scrum & SDLC",
     ],
   },
   {
     index: "03",
-    title: "Data & Experimentation",
+    title: "Data & Analytics",
     items: [
-      "SQL",
-      "A/B testing",
-      "Cohort analysis",
-      "KPI definition",
+      "Advanced Excel (Pivot, Slicers)",
+      "Power BI",
+      "Looker Studio",
+      "SQL query analysis",
+      "Dashboard development",
       "Python / Pandas",
     ],
   },
@@ -362,27 +373,28 @@ export const COMPETENCIES = [
     index: "04",
     title: "AI & Technical Systems",
     items: [
-      "RAG architecture",
+      "Generative AI & RAG",
+      "LangChain & Pinecone",
       "Prompt engineering",
-      "Vector databases",
-      "REST APIs",
-      "ML fundamentals",
+      "Python, SQL & C++",
+      "Flask & REST APIs",
+      "Svelte & Vite frontend",
     ],
   },
 ];
 
 export const EDUCATION = {
-  degree: "Integrated M.Tech in Software Engineering",
+  degree: "M.Tech Integrated – Software Engineering",
   institution: "Vellore Institute of Technology (VIT)",
-  period: "2022 — 2027",
+  period: "09/2022 — 07/2027",
   cgpa: "9.04 / 10",
   badge: "Academic Excellence",
   description:
-    "Comprehensive 5-year software engineering program combining computer science fundamentals, modular system architecture, data structures, and human-computer interaction.",
+    "Comprehensive 5-year software engineering program combining computer science fundamentals, modular system architecture, human-computer interaction, and product management rigor.",
   highlights: [
     "Academic Standing: 9.04 / 10 CGPA, demonstrating consistent excellence across technical engineering coursework.",
-    "Core Coursework: Software Architecture, Data Structures & Algorithms, Database Management Systems, System Design, Machine Learning, and HCI.",
-    "Technical Edge for PM: Translates complex architectural constraints into clear product requirements and feasible roadmaps.",
+    "Foundational Coursework: Software Architecture, Data Structures & Algorithms, Database Management Systems, Machine Learning, and HCI.",
+    "Technical Edge for PM: Combines software engineering depth with user empathy, KPI tracking, and data-driven prioritization.",
   ],
   coursework: [
     "Software Architecture",
@@ -390,26 +402,64 @@ export const EDUCATION = {
     "DBMS & SQL",
     "Human-Computer Interaction",
     "Machine Learning & AI",
-    "System Design",
+    "Agile & SDLC",
+  ],
+  priorEducation: [
+    {
+      level: "Higher Secondary (HSC)",
+      institution: "MSP HSS Malappuram, Kerala",
+      period: "09/2019 — 07/2021",
+      score: "97.83%",
+    },
+    {
+      level: "Secondary School (SSLC)",
+      institution: "MSP EMHS Malappuram, Kerala",
+      period: "07/2018 — 07/2019",
+      score: "100%",
+    },
   ],
 };
+
+export const CERTIFICATIONS = [
+  {
+    title: "Oracle Agentic AI Foundations Associate Certification",
+    issuer: "Oracle",
+    year: "2026",
+    badge: "Agentic AI",
+    description: "Foundational mastery in autonomous AI agents, multi-agent architectures, and agentic workflows.",
+  },
+  {
+    title: "AWS Cloud Operations: Compute & Storage",
+    issuer: "Amazon Web Services (AWS)",
+    year: "2024",
+    badge: "Cloud Infrastructure",
+    description: "Cloud compute provisioning, operational reliability, storage scaling, and deployment architectures.",
+  },
+  {
+    title: "Project Management Foundations",
+    issuer: "LinkedIn Learning",
+    year: "2024",
+    badge: "Project Management",
+    description: "Project coordination, milestone tracking, risk identification, progress reporting, and stakeholder alignment.",
+  },
+];
 
 export const EXPERIENCES = [
   {
     id: "swe-intern",
     period: "Jun 2024 — Jul 2024",
     role: "Software Engineer Intern",
-    organization: "Open Financial Technologies · Bangalore",
+    organization: "OPEN Financial Technologies · Bangalore, India",
     type: "Internship",
     badge: "Fintech & Engineering",
     description:
-      "Worked with the engineering team at Open Financial Technologies in Bangalore, collaborating in an agile environment on day-to-day software development tasks and sprint goals.",
+      "Collaborated with the engineering team across the software development lifecycle (SDLC) in a fast-paced fintech environment, building frontend modules and validating product features.",
     responsibilities: [
-      "Collaborated with the engineering team in Bangalore in an agile environment, participating in daily standups and sprint planning.",
-      "Assisted with developing, testing, and debugging software features alongside senior developers.",
-      "Gained practical exposure to team workflows, version control, code reviews, and fintech software practices.",
+      "Collaborated with software engineers throughout the SDLC to debug, test, validate, and support deployment of software features.",
+      "Assisted in developing and maintaining frontend modules using Svelte and Vite.",
+      "Validated product features, analysed user workflows, and supported product enhancements in a fast-paced fintech environment.",
     ],
-    skills: ["Agile Workflows", "Team Collaboration", "Software Development", "Debugging", "Git"],
+    skills: ["Svelte", "Vite", "SDLC", "Frontend", "Testing & Validation", "Fintech", "Agile"],
   },
   {
     id: "codsoft-intern",

@@ -6,7 +6,7 @@ const ENTRIES = [
   { index: "01", title: "Case studies", meta: "14 documents", href: "#work", testid: "toc-link-case-studies" },
   { index: "02", title: "Product Thinking Lab", meta: "3 panels", href: "#lab", testid: "toc-link-thinking-lab" },
   { index: "03", title: "Competencies & tooling", meta: "4 disciplines", href: "#competencies", testid: "toc-link-competencies" },
-  { index: "04", title: "Experience & education", meta: "Education · Internships · VIT", href: "#experience", testid: "toc-link-experience" },
+  { index: "04", title: "Experience, education & certs", meta: "Credentials · VIT · Open Fintech", href: "#experience", testid: "toc-link-experience" },
   { index: "05", title: "Contact & socials", meta: "Let's connect", href: "#contact", testid: "toc-link-contact" },
 ];
 

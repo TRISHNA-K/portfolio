@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Download, Mail, FileText, Copy, Check } from "lucide-react";
-import { EMAIL, GITHUB_URL, LINKEDIN_URL, RESUME_URL, getGmailUrl } from "../data/portfolio";
+import { ArrowUpRight, Download, Mail, FileText, Copy, Check, Phone } from "lucide-react";
+import { EMAIL, PHONE, PHONE_URL, GITHUB_URL, LINKEDIN_URL, RESUME_URL, getGmailUrl } from "../data/portfolio";
 
 export const Contact = () => {
   const [copied, setCopied] = useState(false);
@@ -105,6 +105,14 @@ export const Contact = () => {
             >
               GitHub
               <ArrowUpRight size={14} strokeWidth={1.75} />
+            </a>
+            <a
+              href={PHONE_URL}
+              data-testid="contact-phone-link"
+              className="inline-flex items-center gap-2 border border-[#141413]/30 px-6 py-4 font-mono-x text-xs uppercase tracking-[0.18em] hover:bg-[#141413] hover:text-[#f5f1e8] hover:border-[#141413] transition-colors duration-300"
+            >
+              <Phone size={14} strokeWidth={1.75} />
+              <span>{PHONE}</span>
             </a>
           </div>
         </motion.div>
