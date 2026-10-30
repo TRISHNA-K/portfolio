@@ -80,6 +80,7 @@ export const Contact = () => {
               href={RESUME_URL}
               target="_blank"
               rel="noopener noreferrer"
+              download="Trishna_K_Resume.pdf"
               data-testid="contact-resume-button"
               className="inline-flex items-center gap-1.5 border border-[#141413]/30 px-6 py-4 font-mono-x text-xs uppercase tracking-[0.18em] hover:bg-[#141413] hover:text-[#f5f1e8] hover:border-[#141413] transition-colors duration-300"
             >

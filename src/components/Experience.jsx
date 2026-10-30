@@ -467,6 +467,7 @@ export const Experience = () => {
                 href={RESUME_URL}
                 target="_blank"
                 rel="noopener noreferrer"
+                download="Trishna_K_Resume.pdf"
                 data-testid="cta-resume-button"
                 className="inline-flex items-center gap-2 border border-[#141413]/30 px-5 py-3.5 font-mono-x text-xs uppercase tracking-[0.18em] hover:bg-[#141413] hover:text-[#f5f1e8] hover:border-[#141413] transition-colors duration-300"
               >

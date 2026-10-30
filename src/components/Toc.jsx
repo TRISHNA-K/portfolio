@@ -23,9 +23,6 @@ export const Toc = () => (
         <h2 className="mt-4 font-display font-semibold tracking-tight text-2xl sm:text-3xl lg:text-4xl">
           Built to be skimmed.
         </h2>
-        <p className="mt-3 max-w-lg text-[#5e5b52] leading-relaxed">
-          Recruiters scan before they read. Every section of this dossier is one jump away.
-        </p>
       </motion.div>
       <div className="mt-12 border-t border-[#141413]/15">
         {ENTRIES.map((e, i) => (
